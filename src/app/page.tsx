@@ -43,16 +43,20 @@ const styles = {
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(255,255,255,0.97)',
-    borderRadius: '28px',
-    padding: '1rem 1.25rem',
+    width: 'clamp(112px, 18vw, 140px)',
+    height: 'clamp(112px, 18vw, 140px)',
     marginBottom: '1.5rem',
-    boxShadow: '0 18px 50px rgba(15, 23, 42, 0.24)',
+    borderRadius: '999px',
+    overflow: 'hidden' as const,
+    border: '2px solid rgba(147,197,253,0.32)',
+    boxShadow: '0 12px 36px rgba(15, 23, 42, 0.22)',
+    backgroundColor: 'rgba(255,255,255,0.08)',
   },
   heroLogo: {
     display: 'block',
-    width: 'min(320px, 72vw)',
-    height: 'auto',
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover' as const,
   },
   heroSubtitle: {
     fontFamily: "'Inter', sans-serif",
@@ -348,7 +352,6 @@ export default function Home() {
               style={styles.heroLogo}
             />
           </div>
-          <p style={styles.heroSubtitle}>Fundación Patagonia Libre</p>
           <h1 style={styles.heroTitle}>
             Impulsamos el desarrollo<br />de una Patagonia libre
           </h1>
