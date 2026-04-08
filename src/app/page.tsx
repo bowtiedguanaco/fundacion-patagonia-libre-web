@@ -368,7 +368,7 @@ export default function Home() {
         <p style={styles.sectionLabel}>Eje I</p>
         <h2 style={styles.sectionTitle}>Educación</h2>
         <p style={styles.paragraph}>
-          La educación es nuestro eje vertebral. No hay transformación duradera sin formación,
+          La educación es nuestro eje principal. No hay transformación duradera sin formación,
           y la Patagonia necesita más y mejores oportunidades de aprendizaje — dentro y fuera
           del sistema formal.
         </p>
@@ -406,7 +406,7 @@ export default function Home() {
             Nuestro objetivo es generar los diagnósticos, datos y propuestas que hoy nadie produce
             sobre la Patagonia desde una perspectiva liberal. Buscamos que las mejores ideas se
             traduzcan en políticas públicas concretas, construyendo influencia desde la sociedad
-            civil y no desde el Estado.
+            civil.
           </p>
         </div>
       </section>
