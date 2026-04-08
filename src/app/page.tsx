@@ -328,18 +328,9 @@ const styles = {
 }
 
 const consejo = [
-  { nombre: 'Jorge Santiago Pauli', cargo: 'Presidente', iniciales: 'SP' },
-  { nombre: 'Luis Miguel Rodríguez', cargo: 'Vicepresidente', iniciales: 'LR' },
-  { nombre: 'Ivana Selene González', cargo: 'Secretaria', iniciales: 'IG' },
-  { nombre: 'Débora Natalia Ramos', cargo: 'Tesorera', iniciales: 'DR' },
-  { nombre: 'Paola Natalia Ovejero', cargo: 'Vocal', iniciales: 'PO' },
-  { nombre: 'Samuel Martín Muñoz Letizia', cargo: 'Vocal', iniciales: 'SM' },
-]
-
-const temas = [
-  'Gasto público', 'Matrices productivas', 'Regulaciones', 'Conectividad',
-  'Energía', 'Recursos naturales', 'Régimen fiscal', 'Mercado laboral',
-  'Integración logística', 'Demografía', 'Desarrollo antártico', 'Atlántico Sur'
+  { nombre: 'Santiago Pauli', cargo: 'Presidente', iniciales: 'SP' },
+  { nombre: 'Miguel Rodríguez', cargo: 'Vicepresidente', iniciales: 'MR' },
+  { nombre: 'Ivana González', cargo: 'Directora ejecutiva', iniciales: 'IG' },
 ]
 
 export default function Home() {
@@ -393,10 +384,10 @@ export default function Home() {
           <div style={styles.card}>
             <h3 style={styles.cardTitle}>Educación no formal</h3>
             <p style={styles.cardText}>
-              Llevar adelante ciclos de conferencias, programas de formación en liderazgo,
-              talleres de educación financiera y emprendedurismo, y contenidos digitales que
-              acerquen el pensamiento crítico, la cultura emprendedora y los valores de la
-              libertad individual a toda la comunidad.
+              Llevar adelante ciclos de conferencias, programas de formación en liderazgo y
+              emprendedurismo, talleres sobre finanzas personales, economía y políticas públicas,
+              y contenidos digitales que promuevan el pensamiento crítico, la cultura emprendedora
+              y los valores de la libertad individual en toda la Patagonia.
             </p>
           </div>
         </div>
@@ -408,9 +399,8 @@ export default function Home() {
           <p style={styles.sectionLabelLight}>Eje II</p>
           <h2 style={styles.sectionTitleLight}>Políticas Públicas</h2>
           <p style={styles.paragraphLight}>
-            Somos un centro de pensamiento — un <em>think tank</em> — dedicado a investigar,
-            analizar y proponer iniciativas de legislación provincial y local para el desarrollo
-            de la región patagónica.
+            Somos un centro de pensamiento dedicado a investigar, analizar y proponer iniciativas
+            de legislación provincial y local para el desarrollo de la región patagónica.
           </p>
           <p style={styles.paragraphLight}>
             Nuestro objetivo es generar los diagnósticos, datos y propuestas que hoy nadie produce
@@ -418,35 +408,23 @@ export default function Home() {
             traduzcan en políticas públicas concretas, construyendo influencia desde la sociedad
             civil y no desde el Estado.
           </p>
-          <div style={styles.topicsGrid}>
-            {temas.map((t) => (
-              <span key={t} style={styles.topicTag}>{t}</span>
-            ))}
-          </div>
         </div>
       </section>
 
       {/* NUESTRA DIFERENCIA */}
       <section style={styles.section}>
-        <div style={styles.diferenciaDivider} />
-        <p style={styles.sectionLabel}>Lo que nos distingue</p>
         <h2 style={styles.sectionTitle}>Nuestra diferencia</h2>
         <p style={styles.paragraph}>
           Ninguna otra fundación liberal argentina tiene foco territorial en la Patagonia.
-          Combinamos la profundidad del think tank con la cercanía del trabajo educativo
-          en el territorio.
+          Combinamos la profundidad de un centro de pensamiento con la cercanía del trabajo
+          educativo en el territorio.
         </p>
-        <blockquote style={styles.blockquote}>
-          Educación y políticas públicas se retroalimentan: formar ciudadanos que piensan
-          mejor y generar propuestas para que vivan mejor. Ese es el círculo virtuoso que
-          queremos impulsar desde el fin del mundo.
-        </blockquote>
       </section>
 
       {/* CONSEJO DE ADMINISTRACIÓN */}
       <section style={styles.sectionDark}>
         <div style={styles.sectionDarkInner}>
-          <p style={styles.sectionLabelLight}>Gobierno</p>
+          <p style={styles.sectionLabelLight}>Nosotros</p>
           <h2 style={styles.sectionTitleLight}>Consejo de Administración</h2>
           <div style={styles.consejoGrid}>
             {consejo.map((m) => (
@@ -457,31 +435,19 @@ export default function Home() {
               </div>
             ))}
           </div>
-
-          {/* Consejo Académico placeholder */}
-          <div style={styles.academicoBox}>
-            <p style={styles.academicoTitle}>Consejo Académico</p>
-            <p style={styles.academicoText}>En conformación</p>
-          </div>
         </div>
       </section>
 
       {/* CONTACTO */}
       <section style={styles.contactSection}>
         <h2 style={styles.contactTitle}>Contacto</h2>
-        <p style={styles.contactText}>Río Grande, Tierra del Fuego, Argentina</p>
-        <p style={styles.contactText}>Esteban Martínez Martos N° 227</p>
+        <p style={styles.contactText}>Tierra del Fuego, Antártida e Islas del Atlántico Sur, Argentina</p>
         <p style={{ ...styles.contactText, marginTop: '1rem' }}>
           <a href="mailto:contacto@fundacionpatagonalibre.org" style={styles.contactEmail}>
             contacto@fundacionpatagonalibre.org
           </a>
         </p>
       </section>
-
-      {/* FOOTER */}
-      <footer style={styles.footer}>
-        <p>Fundación Impulsar el Desarrollo de una Patagonia Libre — Personería Jurídica IGJ Nº 114/2026</p>
-      </footer>
     </div>
   )
 }
