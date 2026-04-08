@@ -305,12 +305,19 @@ const styles = {
     fontSize: '1rem',
     color: '#94a3b8',
     marginBottom: '0.3rem',
+    maxWidth: '32rem',
+    marginInline: 'auto',
   },
   contactEmail: {
-    fontSize: '1.1rem',
+    display: 'inline-block',
+    maxWidth: '100%',
+    fontSize: 'clamp(0.95rem, 4vw, 1.1rem)',
     color: '#93c5fd',
     fontWeight: 500,
     textDecoration: 'none',
+    lineHeight: 1.45,
+    overflowWrap: 'anywhere' as const,
+    wordBreak: 'break-word' as const,
   },
 
   // Footer
