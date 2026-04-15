@@ -106,6 +106,7 @@ const styles = {
     backgroundColor: '#0f1729',
     color: '#e2e8f0',
     padding: 'clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 3rem)',
+    margin: 0,
   },
   sectionDarkInner: {
     maxWidth: '900px',
@@ -398,29 +399,34 @@ export default function Home() {
         </p>
       </section>
 
-      {/* CONSEJOS */}
+      {/* CONSEJOS — single dark section, no gap */}
       <section style={styles.sectionDark}>
         <div style={styles.sectionDarkInner}>
           <p style={styles.sectionLabelLight}>Nosotros</p>
-          <h2 style={styles.sectionTitleLight}>Consejo Administrativo</h2>
-          <div style={styles.consejoGrid}>
-            {consejo.map((m) => (
-              <div key={m.nombre} style={styles.consejoCard}>
-                <div style={styles.consejoAvatar}>{m.iniciales}</div>
-                <p style={styles.consejoName}>{m.nombre}</p>
-                <p style={styles.consejoCargo}>{m.cargo}</p>
-              </div>
-            ))}
+
+          <div>
+            <h2 style={{ ...styles.sectionTitleLight, marginBottom: '1rem' }}>Consejo Administrativo</h2>
+            <div style={styles.consejoGrid}>
+              {consejo.map((m) => (
+                <div key={m.nombre} style={styles.consejoCard}>
+                  <div style={styles.consejoAvatar}>{m.iniciales}</div>
+                  <p style={styles.consejoName}>{m.nombre}</p>
+                  <p style={styles.consejoCargo}>{m.cargo}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <h2 style={{ ...styles.sectionTitleLight, marginTop: '3rem' }}>Consejo Académico</h2>
-          <div style={styles.consejoGrid}>
-            {consejoAcademico.map((m) => (
-              <div key={m.nombre} style={styles.consejoCard}>
-                <div style={styles.consejoAvatar}>{m.iniciales}</div>
-                <p style={styles.consejoName}>{m.nombre}</p>
-              </div>
-            ))}
+          <div style={{ marginTop: '2rem' }}>
+            <h2 style={{ ...styles.sectionTitleLight, marginBottom: '1rem' }}>Consejo Académico</h2>
+            <div style={styles.consejoGrid}>
+              {consejoAcademico.map((m) => (
+                <div key={m.nombre} style={styles.consejoCard}>
+                  <div style={styles.consejoAvatar}>{m.iniciales}</div>
+                  <p style={styles.consejoName}>{m.nombre}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
