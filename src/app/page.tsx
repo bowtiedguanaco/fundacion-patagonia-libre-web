@@ -333,6 +333,13 @@ const consejo = [
   { nombre: 'Ivana González', cargo: 'Directora ejecutiva', iniciales: 'IG' },
 ]
 
+const consejoAcademico = [
+  { nombre: 'Alberto Medina Méndez', iniciales: 'AM' },
+  { nombre: 'Alejandro Bongiovanni', iniciales: 'AB' },
+  { nombre: 'Manuel Guisone', iniciales: 'MG' },
+  { nombre: 'José Ramón Acosta Gómez', iniciales: 'JA' },
+]
+
 export default function Home() {
   return (
     <div style={styles.page}>
@@ -432,6 +439,22 @@ export default function Home() {
                 <div style={styles.consejoAvatar}>{m.iniciales}</div>
                 <p style={styles.consejoName}>{m.nombre}</p>
                 <p style={styles.consejoCargo}>{m.cargo}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONSEJO ACADÉMICO */}
+      <section style={styles.sectionDark}>
+        <div style={styles.sectionDarkInner}>
+          <p style={styles.sectionLabelLight}>Nosotros</p>
+          <h2 style={styles.sectionTitleLight}>Consejo Académico</h2>
+          <div style={styles.consejoGrid}>
+            {consejoAcademico.map((m) => (
+              <div key={m.nombre} style={styles.consejoCard}>
+                <div style={styles.consejoAvatar}>{m.iniciales}</div>
+                <p style={styles.consejoName}>{m.nombre}</p>
               </div>
             ))}
           </div>
