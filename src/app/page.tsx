@@ -191,11 +191,11 @@ const styles = {
     flexWrap: 'wrap' as const,
     justifyContent: 'center',
     gap: '1.5rem',
-    marginTop: '2rem',
+    marginTop: '1rem',
   },
   consejoCard: {
     textAlign: 'center' as const,
-    padding: '1.5rem',
+    padding: '1rem',
     flex: '0 0 200px',
   },
   consejoAvatar: {
@@ -398,7 +398,7 @@ export default function Home() {
         </p>
       </section>
 
-      {/* CONSEJO ADMINISTRATIVO */}
+      {/* CONSEJOS */}
       <section style={styles.sectionDark}>
         <div style={styles.sectionDarkInner}>
           <p style={styles.sectionLabelLight}>Nosotros</p>
@@ -412,13 +412,8 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* CONSEJO ACADÉMICO */}
-      <section style={{ ...styles.sectionDark, paddingTop: 0 }}>
-        <div style={styles.sectionDarkInner}>
-          <h2 style={styles.sectionTitleLight}>Consejo Académico</h2>
+          <h2 style={{ ...styles.sectionTitleLight, marginTop: '3rem' }}>Consejo Académico</h2>
           <div style={styles.consejoGrid}>
             {consejoAcademico.map((m) => (
               <div key={m.nombre} style={styles.consejoCard}>
