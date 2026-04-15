@@ -433,7 +433,7 @@ export default function Home() {
       <section style={styles.sectionDark}>
         <div style={styles.sectionDarkInner}>
           <p style={styles.sectionLabelLight}>Nosotros</p>
-          <h2 style={styles.sectionTitleLight}>Consejo Académico</h2>
+          <h2 style={styles.sectionTitleLight}>Consejo Administrativo</h2>
           <div style={styles.consejoGrid}>
             {consejo.map((m) => (
               <div key={m.nombre} style={styles.consejoCard}>
