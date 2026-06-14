@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:I[97367,["/fundacion-patagonia-libre-web/_next/static/chunks/2f236954d6a65e12.js"],"OutletBoundary"]
-3:"$Sreact.suspense"
-0:{"buildId":"jv_FHOKDAlyx2fxlu5J9R","rsc":["$","$1","c",{"children":[["$","main",null,{"style":{"margin":0,"padding":0,"minHeight":"100vh","background":"#06101f"},"children":["$","iframe",null,{"title":"Fundación Patagonia Libre · Instituto Terciario Río Gallegos","src":"/fundacion-patagonia-libre-web/instituto-static/index.html","style":{"display":"block","width":"100%","minHeight":"100vh","height":"100dvh","border":0,"background":"#06101f"}}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
-4:null
